@@ -1,0 +1,2 @@
+# Data structure
+A data structure is a specialized format for organizing, managing, and storing data so it can be accessed and modified efficiently. Data structures are foundational in computer science and are essential for creating efficient algorithms. They enable you to handle large amounts of data in ways that are optimized for the specific operations you need, such as searching, inserting, deleting, or updating data.
