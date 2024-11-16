@@ -1,5 +1,7 @@
 package com.example.datastructuresandalgorithms.basicprogramming.array
 
+import kotlinx.coroutines.handleCoroutineException
+
 fun main(){
     var array = arrayOf(2,2,3,4,5,6,7,7)
     allTheUniqueValuesInArray(array)
@@ -45,3 +47,15 @@ fun allTheUniqueValuesInArray(array: Array<Int>) {
     }
 
 
+fun twoSum(nums: IntArray, target: Int): IntArray {
+    for (i in nums.indices) {
+        for (j in i + 1 until nums.size) { // Start `j` from `i + 1` to avoid duplicate pairs
+            if (nums[i] + nums[j] == target) {
+                return intArrayOf(i, j) // Return indices as soon as the pair is found
+            }
+        }
+
+    }
+
+    throw IllegalArgumentException("No two sum solution")
+}
