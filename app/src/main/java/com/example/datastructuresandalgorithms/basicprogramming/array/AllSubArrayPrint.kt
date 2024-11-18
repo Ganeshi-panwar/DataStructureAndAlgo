@@ -3,6 +3,7 @@ fun main() {
     val arr = arrayOf(3, -4, 5, 4, -1, 7, -8)
     allSubArrayInArray(arr)
 }
+// fins maximum sum of array using brute force algorithm
 fun allSubArrayInArray(arr:Array<Int>){
     var mxa = 0
     for (star in arr.indices){
